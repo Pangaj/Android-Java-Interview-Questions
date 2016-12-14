@@ -9,18 +9,22 @@
 * Example : String is Immutable
 
 ```
-String str = Pangaj;
+String str = "Pangaj";
 str = str + " Shruthi";
 ```
 * Although we made use of the same object(str), internally a new object was created in the process. So, if you were to do some string operation involving an append or trim or some other method call to modify your string object, you would really be creating those many new objects of class String.
 
-
-This will causes performance issue.
+* This will causes performance issue.
 
 
 #####Mutable 
 * the value stored in the String object can be changed.
 * Example : StringBuilder and StringBuffer is mutable.
+
+```
+StringBuilder str = "Pangaj";
+str = str.append(" Shruthi");
+```
 
 Now lets see the difference between the StringBuilder and StringBuffer:
 

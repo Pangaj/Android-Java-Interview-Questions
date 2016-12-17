@@ -58,3 +58,50 @@ Now lets see the difference between the StringBuilder and StringBuffer:
 * __TELNET__ : TCP/IP Terminal Emulation Protocol
 * __UPD__ : User Datagram Protocol
 * __UPS__ : Uninterruptible Power Supply
+
+###3. What is difference between Asynchronous vs synchronous in Thread operations?
+
+* When you execute something __synchronously__, you ___wait for it to finish before moving on to another task.___ 
+* When you execute something __asynchronously__, you can ___move on to another task before it finishes.___
+
+* That being, said, in the context of computers this translates into executing a process or task on another "thread." __A thread is a series of commands--a block of code--that exists as a unit of work.__
+*  The operating system can manage multiple threads and assign a thread a piece ("slice") of processor time before switching to another thread to __give it a turn to do some work.__ At its core, a processor can simply execute a command--it has no concept of doing two things at one time. The operating system simulates this by allocating slices of time to different threads.
+
+##### After Multiple cores/processors
+* Now, if you introduce multiple cores/processors into the mix, then things ___can actually happen at the same time___. 
+* The operating system __can allocate time to one thread on the first processor__, then __allocate the same block of time to another thread on a different processor.__
+
+######Synchronous (one thread):
+```
+1 thread ->   |<---A---->||<----B---------->||<------C----->|
+```
+
+######Synchronous (multi-threaded):
+```
+thread A -> |<---A---->|   
+                        \  
+thread B ------------>   ->|<----B---------->|   
+                                              \   
+thread C ---------------------------------->   ->|<------C----->| 
+```
+
+######Asynchronous (one thread):
+```
+         A-Start ------------------------------------------ A-End   
+           | B-Start -----------------------------------------|--- B-End   
+           |    |      C-Start ------------------- C-End      |      |   
+           |    |       |                           |         |      |
+           V    V       V                           V         V      V      
+1 thread->|<-A-|<--B---|<-C-|-A-|-C-|--A--|-B-|--C-->|---A---->|--B-->| 
+```
+
+######Asynchronous (multi-Threaded):
+```
+ thread A ->     |<---A---->|
+ thread B ----->     |<----B---------->| 
+ thread C --------->     |<------C--------->|
+```
+
+* Here, Start and end points of tasks A, B, C represented by ```<``` , ``` >``` characters.
+
+* CPU time slices represented by vertical bars ```|```

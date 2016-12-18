@@ -59,6 +59,7 @@ Now lets see the difference between the StringBuilder and StringBuffer:
 * __UPD__ : User Datagram Protocol
 * __UPS__ : Uninterruptible Power Supply
 
+
 ###3. What is difference between Asynchronous vs synchronous in Thread operations?
 
 * When you execute something __synchronously__, you ___wait for it to finish before moving on to another task.___ 
@@ -105,3 +106,11 @@ thread C ---------------------------------->   ->|<------C----->|
 * Here, Start and end points of tasks A, B, C represented by ```<``` , ``` >``` characters.
 
 * CPU time slices represented by vertical bars ```|```
+
+
+###4. Can try/catch block is executed without executing the finally block?
+
+* __Note,__ The ___finally___ block will always execute. 
+* But it wont run if you call ___System.exit()___ from try/catch block
+
+* If you even use ___return___ statement in the try/catch block, the finally block will execute. Only the ___finally___ can be skipped when you use ___System.exit()___ in you try/catch block.

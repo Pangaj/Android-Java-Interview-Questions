@@ -114,3 +114,33 @@ thread C ---------------------------------->   ->|<------C----->|
 * But it wont run if you call ___System.exit()___ from try/catch block
 
 * If you even use ___return___ statement in the try/catch block, the finally block will execute. Only the ___finally___ can be skipped when you use ___System.exit()___ in you try/catch block.
+
+
+###5. Difference between String object and String literal?
+
+* Before going to the answer, we want to know that,
+* __
+String object__ - ___Variable___ But, __String literal__ - ___Constant.___
+
+* When you use a **string literal the string can be interned**, but when you use **new String("...") you get a new string object.**
+
+
+```
+String a = "Pan"; 
+String b = "Pan";
+System.out.println(a == b);  // true
+```
+
+* The above example refers the same object.
+
+
+```
+String c = new String("Pan");
+String d = new String("Pan");
+System.out.println(c == d);  // false
+
+```
+
+* 2 different objects are created and they have different references.
+
+* In general, you should use the **string literal notation when possible**. It is *easier to read* and it gives the compiler a chance to optimize your code.

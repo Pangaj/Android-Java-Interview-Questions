@@ -119,8 +119,7 @@ thread C ---------------------------------->   ->|<------C----->|
 ###5. Difference between String object and String literal?
 
 * Before going to the answer, we want to know that,
-* __
-String object__ - ___Variable___ But, __String literal__ - ___Constant.___
+* __String object__ - ___Variable___ But, __String literal__ - ___Constant.___
 
 * When you use a **string literal the string can be interned**, but when you use **new String("...") you get a new string object.**
 

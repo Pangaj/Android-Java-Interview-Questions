@@ -167,3 +167,15 @@ System.out.println(c == d);  // false
 * **Stack** is ***thread specific*** and,
 *  **Heap** is ***application specific.*** 
 *  The **stack** is *important to consider* in ***exception handling and thread executions.***
+
+####7. Compare the sleep() and wait() methods in threads.
+
+* ***sleep()*** is a *blocking operation that keeps* a **hold on the monitor** / **lock of the shared object** for the *specified number of milliseconds.*
+
+* ***wait(),*** **simply pauses the thread** until either,
+
+1. The **specified number of milliseconds** have elapsed or 
+2. It **receives a desired notification from another thread** *(whichever is first),* **without keeping a hold on the monitor/lock** *of the shared object.*
+
+* ***sleep()*** is most commonly **used for polling, or to check for certain results, at a regular interval.** 
+* ***wait()*** is generally used in **multithreaded applications**, *in conjunction with notify() / notifyAll(), to* **achieve synchronization** *and avoid race conditions*

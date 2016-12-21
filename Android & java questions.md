@@ -137,7 +137,6 @@ System.out.println(a == b);  // true
 String c = new String("Pan");
 String d = new String("Pan");
 System.out.println(c == d);  // false
-
 ```
 
 * 2 different objects are created and they have different references.
@@ -179,3 +178,12 @@ System.out.println(c == d);  // false
 
 * ***sleep()*** is most commonly **used for polling, or to check for certain results, at a regular interval.** 
 * ***wait()*** is generally used in **multithreaded applications**, *in conjunction with notify() / notifyAll(), to* **achieve synchronization** *and avoid race conditions*
+
+###8. ```ArrayList```, ```LinkedList```, and ```Vector``` are all implementations of the ```List``` interface. Which one of them is most efficient for adding and removing elements from list?
+
+*  ***LinkedList*** gives you the best performance.
+*  **ArrayList** and **Vector** each use an ***array to store* the elements of the list**. 
+*  As a result, when an element is *inserted into (or removed from)* the *middle of the list*, the elements that follow **must all be shifted accordingly**. 
+*  ***Vector is synchronized***, so if a *thread-safe implementation is not needed*, it is *recommended* to use **ArrayList** rather than Vector.
+*  **LinkedList**, on the other hand, is **implemented using a doubly linked list.** As a result, an *inserting or removing* an element only requires ***updating the links that immediately precede*** and *follow the element being inserted or removed*.
+*  However, it is worth noting that if **performance is that critical**, it’s *better to just use an array and manage it yourself*, or use one of the *high performance 3rd party packages* such as [***Trove***](http://trove.starlight-systems.com) or [***HPPC***](http://labs.carrotsearch.com/hppc.html).

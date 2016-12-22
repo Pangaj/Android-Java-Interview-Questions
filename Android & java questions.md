@@ -187,3 +187,14 @@ System.out.println(c == d);  // false
 *  ***Vector is synchronized***, so if a *thread-safe implementation is not needed*, it is *recommended* to use **ArrayList** rather than Vector.
 *  **LinkedList**, on the other hand, is **implemented using a doubly linked list.** As a result, an *inserting or removing* an element only requires ***updating the links that immediately precede*** and *follow the element being inserted or removed*.
 *  However, it is worth noting that if **performance is that critical**, it’s *better to just use an array and manage it yourself*, or use one of the *high performance 3rd party packages* such as [***Trove***](http://trove.starlight-systems.com) or [***HPPC***](http://labs.carrotsearch.com/hppc.html).
+
+
+###9. Why would it be more secure to store sensitive data (such as a password, social security number, etc.) in a ```character array``` rather than in a String?
+
+* In Java, **Strings are immutable** and are ***stored in the String pool***. 
+* What this means is that, once a *String is created*, it ***stays in the pool in memory until being garbage collected***. 
+* Therefore, e*ven after you’re done processing the string value* (e.g., the password), it **remains available in memory for an indeterminate period of time** thereafter (again, until being garbage collected) **which you have no real control over**. 
+
+> Therefore, anyone having **access to a memory dump** can potentially *extract the sensitive data* and exploit it.
+
+* In contrast, *if you use* a **mutable object** like a ***character array***, to store the value, you ***can set it to blank once you are done with it*** with confidence that **it will no longer be retained in memory.**

@@ -198,3 +198,10 @@ System.out.println(c == d);  // false
 > Therefore, anyone having **access to a memory dump** can potentially *extract the sensitive data* and exploit it.
 
 * In contrast, *if you use* a **mutable object** like a ***character array***, to store the value, you ***can set it to blank once you are done with it*** with confidence that **it will no longer be retained in memory.**
+
+
+###10. Difference between List and Set in Java?
+* They both are useful interface collections
+* **List** - ***allows duplicate element***, but ***Set*** - ***don't allows duplicate elements**
+* *List* **maintains** the ***insertion order*** of element, - but *Set* is u***nordered collection***
+* *List* can have **many null objects** - but *Set* permit **only one null element**

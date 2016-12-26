@@ -202,10 +202,10 @@ System.out.println(c == d);  // false
 
 ###10. Difference between List and Set in Java?
 * They both are useful interface collections
-* **List** - ***allows duplicate element***, but ***Set*** - ***don't allows duplicate elements**
-* *List* **maintains** the ***insertion order*** of element, - but *Set* is u***nordered collection***
+* **List** - ***allows duplicate element***, but **Set** - ***don't allows duplicate elements***
+* *List* **maintains** the ***insertion order*** of element, - but *Set* is ***unordered collection***
 * *List* can have **many null objects** - but *Set* permit **only one null element**
 
 ###11. Can you override private or static method in Java ?
-* We **can not** *override private or static* method in Java, if we create *similar* **method** *with same* **return** *type and same method* **arguments** that's called ***method hiding***. 
+* We **can not** override private or static method in Java, if we create **similarmethod** *with **same return** type and same method **arguments** that's called ***method hiding***. 
 

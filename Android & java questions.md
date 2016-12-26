@@ -207,5 +207,7 @@ System.out.println(c == d);  // false
 * *List* can have **many null objects** - but *Set* permit **only one null element**
 
 ###11. Can you override private or static method in Java ?
-* We **can not** override private or static method in Java, if we create **similarmethod** *with **same return** type and same method **arguments** that's called ***method hiding***. 
+* We **can not** override private or static method in Java, if we create **similar method** with **same return** type and same method **arguments** that's called ***method hiding***.
 
+###12. What will happen if we put a key object in a HashMap which is already there ?
+> If we put the same key again, then it will **replace the old mapping** because ***HashMap doesn't allow duplicate keys***.

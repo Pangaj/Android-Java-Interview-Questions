@@ -160,7 +160,7 @@ System.out.println(c == d);  // false
 
 ######Stack or Heap
 * You can use the **stack** if you *know exactly how much* **data** you need to allocate before **compile time** and it is ***not too big.***
-* You can use **heap** if you *don't know exactly how much **data** you will need at **run-time** or if you need to allocate a ***lot of data.***
+* You can use **heap** if you *don't know exactly how much* **data** you will need at **run-time** or if you need to allocate a ***lot of data.***
 
 ######Multi-threaded situation
 * In a multi-threaded situation **each thread** will have its **own completely independent stack** but they will ***share the heap***. 

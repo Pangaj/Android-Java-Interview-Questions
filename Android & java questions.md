@@ -17,7 +17,7 @@ str = str + " Shruthi";
 * This will causes performance issue.
 
 
-#####Mutable 
+#####Mutable
 * the value stored in the String object can be changed.
 * Example : StringBuilder and StringBuffer is mutable.
 
@@ -212,3 +212,7 @@ System.out.println(c == d);  // false
 
 ###12. What will happen if we put a key object in a HashMap which is already there ?
 > If we put the same key again, then it will **replace the old mapping** because ***HashMap doesn't allow duplicate keys***.
+
+
+###13. If a method throws NullPointerException in super class, can we override it with a method which throws RuntimeException?
+* We **can very well throw super class of RuntimeException** in overridden method but you ***can not do same if its checked Exception***.

@@ -147,22 +147,23 @@ System.out.println(c == d);  // false
 ###6. Differnce between Stack and Heap in memory allocation.
 
 * **Stack** is used for ***Static memory allocation,*** Where **Heap** is used for ***Dynamic memory allocation,*** both stored in computer's RAM.
+
 ######Stack
 * Variables allocated on the **stack** are **stored directly to the memory** and ***access to this memory is very fast***, and it's allocation is dealt(deal) with when the program is compiled. 
 * When a function or a method calls another function which in turns calls another function etc., the execution of all those functions remains suspended until the *very last function returns its value*. The stack is always reserved in a **LIFO** *(Last in first out)* order, the most recently reserved block is always the next block to be *freed*. 
 * This makes it really *simple to keep track of the stack*, freeing a block from the stack is **nothing more than adjusting one pointer.**
 
 ######Heap
-* Variables allocated on the **heap** have their ***memory allocated at run time*** and ***accessing this memory is a bit slower***, but the *heap size is **only limited by the size of virtual memory.***
+* Variables allocated on the **heap** have their ***memory allocated at run time*** and ***accessing this memory is a bit slower***, but the *heap size is* ***only limited by the size of virtual memory.***
 * **Element of the heap have no dependencies with each other** and can always be ***accessed randomly at any time***. You can *allocate and free a block at any time.* 
 * This makes it much *more complex to keep track* of which parts of the heap are *allocated or free at any given time.*
 
 ######Stack or Heap
-* You can use the **stack** if you *know exactly how much **data** you need to allocate before **compile time** and it is **not too big.***
-* You can use **heap** if you *don't know exactly how much **data** you will need at **run-time** or if you need to allocate a **lot of data.***
+* You can use the **stack** if you *know exactly how much* **data** you need to allocate before **compile time** and it is ***not too big.***
+* You can use **heap** if you *don't know exactly how much **data** you will need at **run-time** or if you need to allocate a ***lot of data.***
 
 ######Multi-threaded situation
-* In a multi-threaded situation **each thread** will have its ***own completely independent stack** but they will **share the heap***. 
+* In a multi-threaded situation **each thread** will have its **own completely independent stack** but they will ***share the heap***. 
 * **Stack** is ***thread specific*** and,
 *  **Heap** is ***application specific.*** 
 *  The **stack** is *important to consider* in ***exception handling and thread executions.***
@@ -182,7 +183,7 @@ System.out.println(c == d);  // false
 ###8. ```ArrayList```, ```LinkedList```, and ```Vector``` are all implementations of the ```List``` interface. Which one of them is most efficient for adding and removing elements from list?
 
 *  ***LinkedList*** gives you the best performance.
-*  **ArrayList** and **Vector** each use an ***array to store* the elements of the list**. 
+*  **ArrayList** and **Vector** each use an *array to store* **the elements of the list**. 
 *  As a result, when an element is *inserted into (or removed from)* the *middle of the list*, the elements that follow **must all be shifted accordingly**. 
 *  ***Vector is synchronized***, so if a *thread-safe implementation is not needed*, it is *recommended* to use **ArrayList** rather than Vector.
 *  **LinkedList**, on the other hand, is **implemented using a doubly linked list.** As a result, an *inserting or removing* an element only requires ***updating the links that immediately precede*** and *follow the element being inserted or removed*.

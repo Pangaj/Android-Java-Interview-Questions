@@ -216,3 +216,8 @@ System.out.println(c == d);  // false
 
 ###13. If a method throws NullPointerException in super class, can we override it with a method which throws RuntimeException?
 * We **can very well throw super class of RuntimeException** in ***overridden method*** but you ***can not do same if its checked Exception***.
+
+
+###14. How do you ensure that N thread can access N resources without deadlock
+* Key point here is **order**.
+* If you **acquire resources in a particular order** and **release resources in reverse order** you can prevent deadlock.

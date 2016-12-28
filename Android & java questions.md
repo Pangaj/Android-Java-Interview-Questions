@@ -215,4 +215,4 @@ System.out.println(c == d);  // false
 
 
 ###13. If a method throws NullPointerException in super class, can we override it with a method which throws RuntimeException?
-* We **can very well throw super class of RuntimeException** in overridden method but you ***can not do same if its checked Exception***.
+* We **can very well throw super class of RuntimeException** in ***overridden method*** but you ***can not do same if its checked Exception***.

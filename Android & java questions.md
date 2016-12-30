@@ -221,3 +221,6 @@ System.out.println(c == d);  // false
 ###14. How do you ensure that N thread can access N resources without deadlock
 * Key point here is **order**.
 * If you **acquire resources in a particular order** and **release resources in reverse order** you can prevent deadlock.
+
+###15. Can you access non static variable in static context?
+* No you **can not** access static variable in non static context in Java.

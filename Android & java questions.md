@@ -224,3 +224,10 @@ System.out.println(c == d);  // false
 
 ###15. Can you access non static variable in static context?
 * No you **can not** access static variable in non static context in Java.
+
+
+###16. What is intent?
+* It is  a kind of **message or information** that is **passed to the components**.
+* It is used to launch an activity, display a web page, send sms, send email etc. There are two types of intents in android:
+ 1.     Implicit Intent
+ 2.     Explicit Intent

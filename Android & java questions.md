@@ -231,3 +231,7 @@ System.out.println(c == d);  // false
 * It is used to launch an activity, display a web page, send sms, send email etc. There are two types of intents in android:
  1.     Implicit Intent
  2.     Explicit Intent
+
+###17.What is implicit intent in android?
+* Implicit intent is used to **invoke the system components**.
+

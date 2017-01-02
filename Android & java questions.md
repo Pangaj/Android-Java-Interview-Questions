@@ -235,3 +235,7 @@ System.out.println(c == d);  // false
 ###17.What is implicit intent in android?
 * Implicit intent is used to **invoke the system components**.
 
+
+
+###18. What is explicit intent in android?
+* Explicit intent is used to **invoke the activity class**.

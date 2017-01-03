@@ -239,3 +239,7 @@ System.out.println(c == d);  // false
 
 ###18. What is explicit intent in android?
 * Explicit intent is used to **invoke the activity class**.
+
+
+###19. What is service in android?
+* A [***service***](http://www.javatpoint.com/android-service-tutorial) is a **component that runs in the background**. It is used to play music, handle network transaction etc.

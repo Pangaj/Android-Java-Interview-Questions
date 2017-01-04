@@ -243,3 +243,7 @@ System.out.println(c == d);  // false
 
 ###19. What is service in android?
 * A [***service***](http://www.javatpoint.com/android-service-tutorial) is a **component that runs in the background**. It is used to play music, handle network transaction etc.
+
+
+###20. What is AAPT?
+* AAPT is an acronym for **Android asset packaging tool**. It handles the **packaging process**.

@@ -251,3 +251,6 @@ System.out.println(c == d);  // false
 
 ###21. What is content provider?
 * Content providers are used to **share information between android applications**.
+
+###22. What is fragment?
+* Fragment is a **part of Activity**. By the help of fragments, **we can display multiple screens on one activity.**

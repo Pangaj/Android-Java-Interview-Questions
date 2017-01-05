@@ -247,3 +247,7 @@ System.out.println(c == d);  // false
 
 ###20. What is AAPT?
 * AAPT is an acronym for **Android asset packaging tool**. It handles the **packaging process**.
+
+
+###21. What is content provider?
+* Content providers are used to **share information between android applications**.

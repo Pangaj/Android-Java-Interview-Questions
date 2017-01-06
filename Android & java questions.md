@@ -254,3 +254,7 @@ System.out.println(c == d);  // false
 
 ###22. What is fragment?
 * Fragment is a **part of Activity**. By the help of fragments, **we can display multiple screens on one activity.**
+
+
+###23. What is ADB?
+* ADB stands for **Android Debug Bridge**. It is a *command line tool* that is used to **communicate with the emulator instance**.

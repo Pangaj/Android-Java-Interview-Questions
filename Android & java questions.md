@@ -258,3 +258,7 @@ System.out.println(c == d);  // false
 
 ###23. What is ADB?
 * ADB stands for **Android Debug Bridge**. It is a *command line tool* that is used to **communicate with the emulator instance**.
+
+
+###24. What is NDK?
+* NDK stands for **Native Development Kit**. By using NDK, you can **develop a part **of app using** native language such as C/C++ to boost the performance**.

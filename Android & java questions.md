@@ -262,3 +262,7 @@ System.out.println(c == d);  // false
 
 ###24. What is NDK?
 * NDK stands for **Native Development Kit**. By using NDK, you can **develop a part **of app using** native language such as C/C++ to boost the performance**.
+
+
+###25. What is ANR?
+ANR stands for **Application Not Responding**. It is a dialog box that **appears if the application is no longer responding**.

@@ -35,7 +35,7 @@ Now lets see the difference between the StringBuilder and StringBuffer:
 
 
 
-###2. Mention some ___web protocols___ used for world wide web
+###2. Mention some ___web protocols___ used for world wide web.
 
 * __FTP__ : File Transfer Protocol
 * __HTTP__ : Hypertext Transfer Protocol

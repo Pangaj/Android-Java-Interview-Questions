@@ -16,7 +16,6 @@ str = str + " Shruthi";
 
 * This will causes performance issue.
 
-
 #####Mutable
 * the value stored in the String object can be changed.
 * Example : StringBuilder and StringBuffer is mutable.

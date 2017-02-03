@@ -33,7 +33,6 @@ Now lets see the difference between the StringBuilder and StringBuffer:
 #####So, if you aren’t going to use threading then use the StringBuilder class as it’ll be more efficient than StringBuffer due to the absence of synchronization.
 
 
-
 ###2. Mention some ___web protocols___ used for world wide web.
 
 * __FTP__ : File Transfer Protocol

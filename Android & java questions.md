@@ -1,5 +1,6 @@
 #Android & Java Questions
 
+
 ###1. What is difference between String, StringBuilder, StringBuffer?
 
 * Before going to the question we must know what is _mutable_ and _immutable_ 
